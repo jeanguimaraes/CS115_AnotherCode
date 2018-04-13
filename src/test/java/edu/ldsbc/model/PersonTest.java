@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class PersonTest {
 
-    @Test
+    /*@Test
     public void temp() throws Exception {
         Person person = new Person();
         person.setName("Reed");
@@ -27,5 +27,5 @@ public class PersonTest {
 
 
 
-    }
+    }*/
 }

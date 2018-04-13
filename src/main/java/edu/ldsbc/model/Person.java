@@ -1,17 +1,18 @@
 package edu.ldsbc.model;
 
-public class Person {
+public abstract class Person {
     private String name;
     private int age;
     private float height;
 
-    public String printPerson(){
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", height=" + height +
-                '}';
+    public Person (String name, int age, float height){
+            this.name = name;
+            this.age = age;
+            this.height = height;
     }
+
+
+    public abstract String printPerson();
 
     public String getName() {
         return name;

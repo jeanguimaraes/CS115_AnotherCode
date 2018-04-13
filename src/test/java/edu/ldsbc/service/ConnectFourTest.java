@@ -107,6 +107,30 @@ public class ConnectFourTest {
         c.addToken(0,"R");
         assertEquals("[R, R, R, R, R, R]", c.convertToString(c.grabColumn(0)));
     }
+@Test
+    public void getRow() throws Exception {
+        ConnectFour c = new ConnectFour();
+
+        assertEquals("[null, null, null, null, null, null]",c.convertToString(c.grabColumn(0)));
+
+        c.addToken(0,"R");
+        assertEquals("[null, null, null, null, null, R]", c.convertToString(c.grabColumn(0)));
+
+        c.addToken(0,"R");
+        assertEquals("[null, null, null, null, R, R]", c.convertToString(c.grabColumn(0)));
+
+        c.addToken(0,"R");
+        assertEquals("[null, null, null, R, R, R]", c.convertToString(c.grabColumn(0)));
+
+        c.addToken(0,"R");
+        assertEquals("[null, null, R, R, R, R]", c.convertToString(c.grabColumn(0)));
+
+        c.addToken(0,"R");
+        assertEquals("[null, R, R, R, R, R]", c.convertToString(c.grabColumn(0)));
+
+        c.addToken(0,"R");
+        assertEquals("[R, R, R, R, R, R]", c.convertToString(c.grabColumn(0)));
+    }
 
     @Test
     public void checkOneColumn() throws Exception {

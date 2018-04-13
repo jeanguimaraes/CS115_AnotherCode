@@ -52,6 +52,19 @@ public class ConnectFour {
         return false;
     }
 
+    boolean checkRows(String color){
+        //get a row
+       // String[] row = getRow(0);
+        //check to see if I have 4 in a row
+        //ps check all rows
+        return false;
+    }
+
+    /*private String[] getRow(int i) {
+        String row = grid[0][i] + grid[1][i] + grid[2][i] + grid[3][i] + grid[4][i]+ grid[5][i]+ grid[6][i];
+        return row;
+    }*/
+
     boolean checkVertical(String color) {
         return false;
     }
