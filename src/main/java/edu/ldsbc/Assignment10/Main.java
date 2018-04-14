@@ -8,20 +8,15 @@ public class Main {
 
     public static void main(String[] args) {
         NumberController controller = new NumberController();
-//        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-//        for(int i=0; i<10; i++) {
-//            controller.addNumber(i);
-//        }
-//
-//        controller.displayNumbers();
-//        controller.reverseNumbers();
-//        controller.displayNumbers();
-//        System.out.println("Enter 10 numbers: ");
+        System.out.println("Enter 10 numbers: ");
+        for(int i=0; i<10; i++) {
+            System.out.print("> ");
+            controller.pushNumber(scanner.nextInt());
+        }
 
-
-        // I need to test something
-        int[] numsj = new int[10];
-        System.out.println(numsj[5]); //will the result be 0 ? hmmmm interesting
+        controller.reverseQueue();
+        controller.displayQueue();
     }
 }

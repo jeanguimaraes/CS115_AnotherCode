@@ -6,14 +6,26 @@ public class NumberController {
     private NumberView numberView;
 
     public NumberController() {
-
+        numberHolderModel = new NumberHolderModel();
+        numberView = new NumberView();
     }
-    public void addNumber(int i) {
+    public void pushNumber(int i) {
+        numberHolderModel.push(i);
     }
 
-    public void displayNumbers() {
+    public int popNumber() {
+        return numberHolderModel.pop();
     }
 
-    public void reverseNumbers() {
+    public void displayQueue() {
+        numberView.displayQueue(numberHolderModel.getNumberQueue());
+    }
+
+    public void reverseQueue() {
+        numberHolderModel.reverseQueue();
+    }
+
+    public int[] getQueue() {
+        return numberHolderModel.getNumberQueue();
     }
 }
